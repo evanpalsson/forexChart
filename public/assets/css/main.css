@@ -1,3 +1,17 @@
+.topbar {
+  padding: 7.5px;
+  text-align: center;
+}
+
+.navbar-left {
+  font-size: 30px;
+}
+
+.navbar-right {
+  font-size: 24px;
+  text-align: center;
+}
+
 .nav-one {
 	margin-bottom: 0px;
 }
@@ -5,13 +19,33 @@
 .nav-two {
 	background-color: rgb(46,46,46);
 	color: white;
-	margin-bottom: 0px;
+	margin: 0;
+  padding: 0;
 }
 
 .navbar-fixed-top {
 }
 
+.navbar-header {  
+}
+
+.hvr-fade:hover {
+  background: #66FF33;
+  color: black;
+}
+
+.hvr-shutter-out-horizontal:hover {
+  color: black;
+}
+
+.hvr-shutter-out-horizontal:before {
+  background: #FFFF00;
+  color: black;
+}
+
 .row {
+  margin: 0;
+  padding: 0;
 }
 
 .list-unstyled {
@@ -23,15 +57,34 @@
 }
 
 .container {
+  background-color: black;
 	padding-top: 100px;
 	margin-left: 1.333px;
 	margin-right: 1.333px;
 	width: auto;
 }
 
-.btn {
+.chartjar {
+  margin-top: 120px;
+  margin-bottom: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbtn {
 	background-color: rgb(46,46,46);
 	margin-top: 5px;
+  font-size: 16px;
+  border-radius: 0.5;
+}
+
+.pairbtn {
+  border-radius: 0;
+  border: 0;
+  background: rgb(46,46,46);
+  color: white;
+  font-size: 20px;
+  padding: 8px;
 }
 
 .form-control {

@@ -1,8 +1,16 @@
 <div ng-controller='chartCtrl'>
+		<!-- <form>
+			<input class='container' type='text' ng-model='symbol' ng-submit='getPair()' placeholder='Enter currency pair'>
+		</form>-->
 
-		<input class='container' type='text' ng-model='symbol' ng-submit='getPair' placeholder='Enter currency pair'>
 
-		<div id="container" class="container" style="width:auto; height:auto;"></div>
-
+ <div id="container" class="container chartjar" style="width:auto; height:750px;"></div>
+ <div class='container-fluid row'>
+ 	<ul class='list-unstyled list-inline'>
+		<button class='pairbtn pairbtn col-md-3 hvr-shutter-out-horizontal' ng-click='getPair()' ng-model='symbol'>EUR/USD</button>
+		<button class='pairbtn pairbtn col-md-3 hvr-shutter-out-horizontal' ng-click='getPair()' ng-model='symbol'>GBP/USD</button>
+		<button class='pairbtn pairbtn col-md-3 hvr-shutter-out-horizontal' ng-click='getPair()' ng-model='symbol'>USD/JPY</button>
+		<button class='pairbtn pairbtn col-md-3 hvr-shutter-out-horizontal' ng-click='getPair()' ng-model='symbol'>USD/CHF</button>
+	</ul>
 </div>
 <!-- {{testdata}} -->

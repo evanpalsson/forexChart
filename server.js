@@ -29,11 +29,11 @@ io.on('connection', function(socket){
 		console.log(tick.ask);
 		socket.emit('price', tick);     //this is to emit the data to front end
 	}, this);
-	socket.on('pair', function(data){
-		var currency = data.split('');
-		cur1 = currency.join(currency[0], currency[1], currency[2]);
-		cur2 = currency.join(currency[3], currency[4], currency[5]);
-	})
+	// socket.on('pair', function(symbol){
+	// 	var currency = symbol.split('');
+	// 	cur1 = currency.join(currency[0], currency[1], currency[2]);
+	// 	cur2 = currency.join(currency[4], currency[5], currency[6]);
+	// })
 });	
 														
 
