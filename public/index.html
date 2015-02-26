@@ -3,7 +3,7 @@
 	<head>
 		<title>Forex Charts</title>
 		<link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>		
-		<link href='assets/css/hover.css' rel='stylesheet' type='text/css'>
+		<!-- <link href='assets/css/hover.css' rel='stylesheet' type='text/css'> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="http://www.carbonellusa.com/static/i/expressive/bull.png" type="image/x-icon">
 		<link rel="icon" href="http://www.carbonellusa.com/static/i/expressive/bull.png" type="image/x-icon">
@@ -34,18 +34,16 @@
 				</div>
 			</div>	
 		</div>
-		<div class='navbar navbar-default nav-two'>
-		 	<div class='container-fluid row'>
-		 		<div class='navbar-header text-nowrap col-md-12'>
-		 			<ul class='list-unstyled list-inline'>
-		 				<button class='btn navbtn col-md-6 hvr-fade'>HOME</button>
-		 				<!-- <button class='btn navbtn col-md-3 hvr-fade'>ABOUT</button>
-		 				<button class='btn navbtn col-md-3 hvr-fade'>LOGIN</button> -->
-		 				<button class='btn navbtn col-md-6 hvr-fade'>CHARTS</button>
-		 			</ul>
-		 		</div>
+		<div class='container-fluid row'>
+			<div class='nav-two col-md-12'>
+	 			<ul class='list-unstyled list-inline'>
+	 				<a href='#/'><button class='navbtn col-md-6 hvr-fade'>HOME</button></a>
+	 				<!-- <button class='btn navbtn col-md-3 hvr-fade'>ABOUT</button>
+		 			<button class='btn navbtn col-md-3 hvr-fade'>LOGIN</button> -->
+		 			<a href='#/chart'><button class='navbtn col-md-6 hvr-fade' href='#/chart'>CHARTS</button></a>
+		 		</ul>
 		 	</div>
-		</div>	
+		</div>
 	</div>
 
 	<ng-view></ng-view>

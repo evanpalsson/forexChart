@@ -15,26 +15,50 @@ var port = 8880;
 
 
 
-
 																//oanda stream start
-
 io.on('connection', function(socket){
-	var cur1 = 'EUR';
-	var cur2 = 'USD';
-	var client = new oandaAdapter({
-		environment: 'practice',
-		accessToken: '2be9ee51eb8a151263af2089ac7713a3-cff26104998f7f05e669d104e9f2e857'
+	socket.on('pair', function(symbol){
+		// console.log(symbol)
+		switch(symbol){
+			case 'EUR/USD':
+				pair1 = 'EUR'
+				pair2 = 'USD'
+				break;
+			case 'GBP/USD':
+				pair1 = 'GBP'
+				pair2 = 'USD'
+				break;
+			case 'USD/JPY':
+				pair1 = 'USD'
+				pair2 = 'JPY'
+				break;
+			case 'USD/CHF':
+				pair1 = 'USD'
+				pair2 = 'CHF'
+				break;
+		};
+		startOanda()
 	});
-	client.subscribePrice('8108490', cur1+'_'+cur2, function(tick){
-		console.log(tick.ask);
-		socket.emit('price', tick);     //this is to emit the data to front end
-	}, this);
-	// socket.on('pair', function(symbol){
-	// 	var currency = symbol.split('');
-	// 	cur1 = currency.join(currency[0], currency[1], currency[2]);
-	// 	cur2 = currency.join(currency[4], currency[5], currency[6]);
-	// })
-});	
+
+	var pair1 = 'GBP';
+	var pair2 = 'USD';
+
+	var startOanda = function(){
+		var client = new oandaAdapter({
+			environment: 'practice',
+			accessToken: '2be9ee51eb8a151263af2089ac7713a3-cff26104998f7f05e669d104e9f2e857'
+		});
+		client.subscribePrice('8108490', pair1+'_'+pair2, function(tick){
+			console.log(tick.ask);
+			socket.emit('price', tick);     //this is to emit the data to the front end
+		}, this);
+	}
+
+});
+
+io.on('disconnect', function(socket){
+	socket.disconnect()
+});
 														
 
 

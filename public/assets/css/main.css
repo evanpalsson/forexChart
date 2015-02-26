@@ -1,3 +1,5 @@
+
+
 .topbar {
   padding: 7.5px;
   text-align: center;
@@ -17,9 +19,6 @@
 }
 
 .nav-two {
-	background-color: rgb(46,46,46);
-	color: white;
-	margin: 0;
   padding: 0;
 }
 
@@ -35,10 +34,6 @@
 }
 
 .hvr-shutter-out-horizontal:hover {
-  color: black;
-}
-
-.hvr-shutter-out-horizontal:before {
   background: #FFFF00;
   color: black;
 }
@@ -59,23 +54,30 @@
 .container {
   background-color: black;
 	padding-top: 100px;
-	margin-left: 1.333px;
-	margin-right: 1.333px;
+	margin-left: 0px;
+	margin-right: 0px;
 	width: auto;
 }
 
 .chartjar {
-  margin-top: 120px;
+  margin-top: 115px;
   margin-bottom: 5px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .navbtn {
-	background-color: rgb(46,46,46);
-	margin-top: 5px;
-  font-size: 16px;
-  border-radius: 0.5;
+	border-radius: 0;
+  border: 0;
+  background: rgb(46,46,46);
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  outline: none;
+}
+
+.navbtn .active {
+  background: #FFFF00;
 }
 
 .pairbtn {
@@ -85,6 +87,11 @@
   color: white;
   font-size: 20px;
   padding: 8px;
+  outline: none;
+}
+
+button:active .pairbtn {
+  background: #FFFF00;
 }
 
 .form-control {
