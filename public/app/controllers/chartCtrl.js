@@ -1,6 +1,6 @@
 var app = angular.module('zions');
 
-	app.controller('chartCtrl', function($scope, chartService){
+	app.controller('chartCtrl', function($scope){
 
 		$scope.getPair = function(symbol){			
 			socket.emit('pair', symbol);
