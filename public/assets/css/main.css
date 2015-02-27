@@ -6,11 +6,11 @@
 }
 
 .navbar-left {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .navbar-right {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .chartjar {
-  margin-top: 115px;
+  margin-top: 100px;
   margin-bottom: 5px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -71,7 +71,7 @@
   border: 0;
   background: rgb(46,46,46);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 8px;
   outline: none;
 }
@@ -85,7 +85,7 @@
   border: 0;
   background: rgb(46,46,46);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 8px;
   outline: none;
 }
